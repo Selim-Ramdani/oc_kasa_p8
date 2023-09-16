@@ -9,6 +9,7 @@ import {
 import Accommodations from './pages/Accommodations.jsx';
 import Home from './pages/Home.jsx';
 import Error from './pages/Error.jsx';
+import About from './pages/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/accommodations",
+    path: "/logements",
     element: <Accommodations />,
+  },
+  {
+    path: "/a-propos",
+    element: <About />,
   },
   {
     path: "*",
