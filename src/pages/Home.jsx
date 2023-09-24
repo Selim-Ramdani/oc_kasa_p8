@@ -1,9 +1,14 @@
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+
 function Home() {
 
   return (
-    <div>
+    <>
+      <Header />
       <h1>Hello from Home page!</h1>
-    </div>
+      <Footer />
+    </>
   )
 }
 

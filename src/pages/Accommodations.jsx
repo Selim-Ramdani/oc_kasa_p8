@@ -1,9 +1,14 @@
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+
 function Accommodations() {
 
   return (
-    <div>
+    <>
+      <Header />
       <h1>Hello from Accommodations page!</h1>
-    </div>
+      <Footer />
+    </>
   )
 }
 
