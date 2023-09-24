@@ -1,0 +1,22 @@
+#header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & #header__logo {
+    & img {
+      width: 210px;
+      height: 68px;
+      object-fit: cover;
+    }
+  }
+
+  & #header__links {
+    & #header__links_homepage {
+      margin-right: 4vw;
+    }
+  }
+}
