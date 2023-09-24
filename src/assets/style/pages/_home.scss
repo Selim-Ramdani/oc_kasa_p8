@@ -1,0 +1,21 @@
+#homepage__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  & #homepage__top_bg {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    filter: brightness(70%);
+  }
+
+  & #homepage__top_title {
+    position: absolute;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
