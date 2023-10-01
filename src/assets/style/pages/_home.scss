@@ -1,21 +1,13 @@
-#homepage__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  & #homepage__top_bg {
+#gallery-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem auto;
+    background-color: #f6f6f6;
     width: 100%;
-    position: relative;
-    overflow: hidden;
     border-radius: 25px;
-    filter: brightness(70%);
-  }
-
-  & #homepage__top_title {
-    position: absolute;
-    font-size: 48px;
-    font-weight: 400;
-    color: #fff;
-  }
 }
