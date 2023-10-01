@@ -9,7 +9,14 @@
 
   @import
   'components/header',
-  'components/footer';
+  'components/footer',
+  'components/cards',
+  'components/banner',
+  'components/collapse',
+  'components/slideshow';
 
   @import
-  'pages/home';
+  'pages/home',
+  'pages/accommodations',
+  'pages/notFound',
+  'pages/about';
