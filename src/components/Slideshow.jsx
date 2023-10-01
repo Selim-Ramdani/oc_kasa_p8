@@ -20,7 +20,7 @@ function Slideshow({ slideshow }) {
       <img src={arrowLeft} alt="flèche gauche carroussel" id="arrow_left_svg" onClick={handlePrev} />
       <img
         src={slideshow[currentIndex]}
-        alt="Carroussel"
+        alt="Carrousselsrc/assets/style/components/_slideshow.scss"
         id="slideshow-container_img"
       />
       <img src={arrowRight} alt="flèche gauche carroussel" id="arrow_right_svg" onClick={handleNext}/>
