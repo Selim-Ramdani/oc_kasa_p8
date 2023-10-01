@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+// 3. Base stuff
+@import
+  'base/base';
+
+  @import
+  'abstracts/variables';
+
+  @import
+  'components/header',
+  'components/footer',
+  'components/cards',
+  'components/banner',
+  'components/collapse',
+  'components/slideshow';
+
+  @import
+  'pages/home',
+  'pages/accommodations',
+  'pages/notFound',
+  'pages/about';
