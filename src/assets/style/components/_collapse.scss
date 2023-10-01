@@ -1,0 +1,37 @@
+#collapse-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  background-color: #FF6060;
+  padding: 10px, 20px, 10px, 10px;
+  border-radius: 10px;
+
+  & #dropdown_close {
+    position: absolute;
+    right: 1.3vw;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & #dropdown_open {
+    position: absolute;
+    right: 1.3vw;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & #collapse-container__title {
+    margin-left: 10px;
+    color: #FFF;
+  }
+}
