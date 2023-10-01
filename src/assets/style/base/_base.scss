@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: #FF6060;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+button {
+  font-size: 24px;
+  outline: none;
+  background: none;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
