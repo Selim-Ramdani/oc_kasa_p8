@@ -1,27 +1,41 @@
+import { useState } from "react";
 import dropdownOpen from "../assets/images/dropdown_open.svg";
 import dropdownClose from "../assets/images/dropdown_close.svg";
-import { useState } from "react";
 
-function Collapse({ title }) {
+function Collapse({ title, content }) {
+  const [toggle, setToggle] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setToggle(!toggle);
+  };
 
-  const handleClick = (event) => {
-    setIsOpen(!isOpen);
-  }
   return (
-    <div id="collapse-container">
-      {
-        isOpen ?
-          <>
-            <img src={dropdownClose} alt="" id="dropdown_close" onClick={() => setIsOpen(!isOpen)} />
-          </>
-          : <img src={dropdownOpen} alt="" id="dropdown_open" onClick={() => setIsOpen(!isOpen)} />
-      }
-      <h3 id="collapse-container__title">{title}</h3>
+    <div id="collapse-wrapper">
+      <div id="collapse-wrapper__title">
+        <img
+          src={toggle ? dropdownClose : dropdownOpen}
+          id={toggle ? "dropdown_close" : "dropdown_open"}
+          onClick={handleClick}
+        />
+        <h3>{title}</h3>
+      </div>
+      <div
+        id={
+          toggle
+            ? "collapse-wrapper__content"
+            : "collapse-wrapper-content__hidden"
+        }
+      >
+        {Array.isArray(content) ? (
+          content.map((item, index) => {
+            return <p key={index}>{item}</p>;
+          })
+        ) : (
+          <p>{content}</p>
+        )}
+      </div>
     </div>
-  )
-
+  );
 }
 
-export default Collapse
+export default Collapse;

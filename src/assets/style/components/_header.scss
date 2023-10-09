@@ -6,17 +6,30 @@
   justify-content: space-between;
   align-items: center;
 
-  & #header__logo {
-    & img {
-      width: 210px;
-      height: 68px;
-      object-fit: cover;
-    }
+  & #header-logo {
+    width: 210px;
+    height: 68px;
+    object-fit: cover;
   }
 
   & #header-links {
     & #header-links__homepage {
       margin-right: 4vw;
     }
+  }
+}
+
+// MEDIA QUERIES TABLET
+@media only screen and (max-width: 896px) {
+  #cards-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header-logo {
+    object-fit: contain !important;
+    width: 145px !important;
   }
 }
