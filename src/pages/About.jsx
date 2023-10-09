@@ -1,21 +1,21 @@
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import aboutBg from "../assets/images/about_bg.png"
-import Banner from "../components/Banner"
-import Collapse from "../components/Collapse"
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
+import { aboutData } from "../data/aboutData";
 function About() {
-
   return (
     <>
       <Banner isAbout={true} />
       <div id="about-collapse">
-        <Collapse title={"Fiabilité"} />
-        <Collapse title={"Respect"} />
-        <Collapse title={"Service"} />
-        <Collapse title={"Sécurité"} />
+        {aboutData.map((data, index) => (
+          <Collapse
+            key={`${data.title}-${index}`}
+            title={data.title}
+            content={data.description}
+          />
+        ))}
       </div>
     </>
-  )
+  );
 }
 
-export default About
+export default About;

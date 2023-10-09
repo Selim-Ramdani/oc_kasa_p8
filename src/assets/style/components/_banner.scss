@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   & #banner-container__img {
     width: 100%;
     height: 223px;
@@ -19,5 +19,19 @@
     font-size: 48px;
     font-weight: 400;
     color: #fff;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #banner-container__title {
+    font-size: 38px !important;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #banner-container__title {
+    font-size: 38px !important;
+    max-width: 350px;
+    left: 8%;
   }
 }
