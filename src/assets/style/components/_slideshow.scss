@@ -1,5 +1,5 @@
 #slideshow-container {
-position: relative;
+  position: relative;
   & #slideshow-container_img img {
     object-fit: contain;
   }
@@ -10,7 +10,7 @@ position: relative;
     width: 46px;
     left: 1vw;
     transition: 0.1s ease-in-out;
-    
+
     &:hover {
       cursor: pointer;
       transform: scale(1.04);
@@ -33,5 +33,11 @@ position: relative;
     position: absolute;
     bottom: 2vh;
     left: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .accommodations-container img {
+    height: 255px;
   }
 }

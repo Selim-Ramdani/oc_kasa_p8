@@ -20,3 +20,12 @@ footer {
     font-size: 24px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  #footer-copyright h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    max-width: 195px;
+  }
+}

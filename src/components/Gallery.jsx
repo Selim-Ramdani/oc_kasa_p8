@@ -12,18 +12,22 @@ function Gallery() {
   return (
     <>
       <main className="gallery-container">
-        {accommodations.slice(0, visibleAccommodations).map((item) => (
-          <Cards
-            id={item.id}
-            key={item.id}
-            title={item.title}
-            cover={item.cover}
-          />
-        ))}
+        <div className="gallery">
+          {accommodations.slice(0, visibleAccommodations).map((item) => (
+            <Cards
+              id={item.id}
+              key={item.id}
+              title={item.title}
+              cover={item.cover}
+            />
+          ))}
+        </div>
+        {visibleAccommodations < accommodations.length && (
+          <button id="display-more" onClick={loadMoreAccommodations}>
+            Afficher plus
+          </button>
+        )}
       </main>
-      {visibleAccommodations < accommodations.length && (
-        <button onClick={loadMoreAccommodations}>Afficher plus</button>
-      )}
     </>
   );
 }
