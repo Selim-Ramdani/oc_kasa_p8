@@ -1,4 +1,4 @@
-#header {
+header {
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem 2rem;
@@ -12,24 +12,36 @@
     object-fit: cover;
   }
 
-  & #header-links {
-    & #header-links__homepage {
+  & .header-links {
+    & .active {
+      text-decoration: underline;
+    }
+    & .header-links__homepage {
+      font-size: 24px;
+      font-weight: 500;
       margin-right: 4vw;
     }
   }
 }
 
 // MEDIA QUERIES TABLET
-@media only screen and (max-width: 896px) {
-  #cards-container {
-    width: 100% !important;
-    height: 100% !important;
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 2rem 0;
+  }
+  header #header-logo {
+    object-fit: contain;
+    width: 145px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #header-logo {
-    object-fit: contain !important;
-    width: 145px !important;
+// Mobile
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1rem 0;
+  }
+  header .header-links .header-links__homepage {
+    font-size: 16px;
   }
 }

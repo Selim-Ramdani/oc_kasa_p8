@@ -1,0 +1,21 @@
+@media only screen and (max-width: 895px) {
+  .accommodations-container
+    .accommodations-container__infos
+    .accommodations-container-infos__rightPart
+    .ratings-container
+    .star {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .accommodations-container
+    .accommodations-container__infos
+    .accommodations-container-infos__rightPart
+    .ratings-container
+    .star {
+    width: 8px;
+    height: 8px;
+  }
+}

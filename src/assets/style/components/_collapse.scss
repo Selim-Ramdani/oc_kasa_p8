@@ -60,3 +60,13 @@
     height: 0;
   }
 }
+
+@media only screen and (max-width: 1030px) {
+  #collapse-wrapper #collapse-wrapper__title h3 {
+    font-size: 15px;
+  }
+  #collapse-wrapper #collapse-wrapper__content p {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
