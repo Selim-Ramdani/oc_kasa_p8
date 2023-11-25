@@ -1,0 +1,9 @@
+.accommodations-container {
+  margin: 20px auto;
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+  }
+}

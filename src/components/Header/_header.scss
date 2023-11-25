@@ -1,0 +1,50 @@
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & #header-logo {
+    width: 210px;
+    height: 68px;
+    object-fit: cover;
+  }
+
+  & .header-links {
+    & .active {
+      text-decoration: underline;
+    }
+    & .header-links__homepage {
+      font-size: 24px;
+      font-weight: 500;
+      margin-right: 4vw;
+    }
+    & .header-links__homepage:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// MEDIA QUERIES TABLET
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 2rem 0;
+  }
+  header #header-logo {
+    object-fit: contain;
+    width: 145px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1rem 0;
+  }
+  header .header-links .header-links__homepage {
+    font-size: 16px;
+  }
+}

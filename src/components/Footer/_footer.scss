@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 209px;
+  background-color: $footer-color;
+
+  & #footer-logo img {
+    object-fit: cover;
+    margin-bottom: 2vh;
+  }
+
+  & #footer-copyright h3 {
+    color: $tertiary-color;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #footer-copyright h3 {
+    color: $tertiary-color;
+    font-weight: 500;
+    font-size: 24px;
+    max-width: 195px;
+  }
+}

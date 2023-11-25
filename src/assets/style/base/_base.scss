@@ -18,7 +18,7 @@ p {
 body {
   width: 90%;
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: $code-font-stack;
   font-weight: 500;
   color: $primary-color;
 }

@@ -1,5 +1,5 @@
-import emptyStar from "../assets/images/empty_star.svg";
-import fullStar from "../assets/images/full_star.svg";
+import emptyStar from "../../assets/images/empty_star.svg";
+import fullStar from "../../assets/images/full_star.svg";
 
 function Ratings({ dataCurrentAccommodation }) {
   const rating = dataCurrentAccommodation.rating;

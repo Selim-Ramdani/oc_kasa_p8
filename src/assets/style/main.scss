@@ -4,8 +4,12 @@
 @import "abstracts/variables";
 @import "base/base";
 
-@import "components/header", "components/footer", "components/cards",
-  "components/banner", "components/collapse", "components/slideshow",
-  "components/ratings";
+@import "../../components/Header/header", "../../components/Footer/footer",
+  "../../components/Cards/cards", "../../components/Banner/banner",
+  "../../components/Collapse/collapse", "../../components/Slideshow/slideshow",
+  "../../components/AccommodationInfo/accommodationsInfo",
+  "../../components/Gallery/gallery", "../../components/Ratings/ratings",
+  "../../components/Tags/tags";
 
-@import "pages/home", "pages/accommodations", "pages/notFound", "pages/about";
+@import "../../pages/Acommodations/accommodations",
+  "../../pages/NotFound/notFound", "../../pages/About/about";

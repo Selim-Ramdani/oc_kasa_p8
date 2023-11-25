@@ -1,0 +1,19 @@
+.accommodations-container__tags {
+  display: flex;
+  gap: 10px;
+  & li {
+    color: #fff;
+    background-color: $primary-color;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    list-style: none;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .accommodations-container__tags li {
+    font-size: 11px;
+  }
+}

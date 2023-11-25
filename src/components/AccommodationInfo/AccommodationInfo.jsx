@@ -1,6 +1,6 @@
-import Tags from "./Tags";
-import Collapse from "./Collapse";
-import Ratings from "./Ratings";
+import Tags from "../Tags/Tags";
+import Collapse from "../Collapse/Collapse";
+import Ratings from "../Ratings/Ratings";
 
 function AccommodationInfo({
   title,
