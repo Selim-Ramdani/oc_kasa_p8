@@ -2,8 +2,15 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
 /// Montserrat font
-$code-font-stack: 'Montserrat';
+$code-font-stack: "Montserrat";
 
 // Colors
+
+// Déclaration des variables de couleur
+$primary-color: #ff6060;
+$secondary-color: #f7f7f7;
+$tertiary-color: #ffffff;
+
+$footer-color: #000000;
+$background-color: rgba(0, 0, 0, 0.3);

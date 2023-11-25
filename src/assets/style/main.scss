@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 // 3. Base stuff
-@import "base/base";
-
 @import "abstracts/variables";
+@import "base/base";
 
 @import "components/header", "components/footer", "components/cards",
   "components/banner", "components/collapse", "components/slideshow",

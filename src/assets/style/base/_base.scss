@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  color: #ff6060;
+  color: $primary-color;
   padding: 0;
   margin: 0;
 }
@@ -20,6 +20,7 @@ body {
   margin: 0 auto;
   font-family: "Montserrat";
   font-weight: 500;
+  color: $primary-color;
 }
 
 button {

@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #ff6060;
+  background-color: $primary-color;
   border-radius: 10px;
   margin: 0 auto;
-  color: #fff;
+  color: $tertiary-color;
 
   #dropdown_close,
   #dropdown_open {
@@ -29,7 +29,7 @@
       font-size: 18px;
       padding: 6px;
       font-weight: 500;
-      color: #fff;
+      color: $tertiary-color;
     }
   }
 
@@ -40,8 +40,8 @@
     width: 100%;
     visibility: visible;
     opacity: 1;
-    color: #ff6060;
-    background-color: #f6f6f6;
+    color: $primary-color;
+    background-color: $secondary-color;
     height: auto;
     padding: 10px;
     letter-spacing: 1px;

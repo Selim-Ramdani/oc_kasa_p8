@@ -9,6 +9,7 @@ function Gallery() {
   const loadMoreAccommodations = () => {
     setVisibleAccommodations(visibleAccommodations + 6);
   };
+
   return (
     <>
       <main className="gallery-container">
